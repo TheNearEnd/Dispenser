@@ -14,7 +14,7 @@ module.exports = {
 
         const row = new MessageActionRow().addComponents(
             new MessageButton()
-                .setLabel("🪐 Nebula")
+                .setLabel("Proxies")
                 .setCustomId("neb-btn")
                 .setStyle("PRIMARY")
                 .setDisabled(false),
@@ -29,7 +29,7 @@ module.exports = {
         const proxyEmbed = new MessageEmbed()
             .setTitle("Proxy Dispenser")
             .setDescription(`Choose the proxy you want below or report a blocked one.`)
-            .setColor("#4000ff")
+            .setColor("#FFA500")
             .setFooter({ text: `${client.config.EMBEDFOOTERTEXT}`, iconURL: `${client.user.displayAvatarURL()}` });
 
         await interaction.reply({ embeds: [proxyEmbed], components: [row] });
